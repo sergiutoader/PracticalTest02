@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/serverTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/serverPortEditText"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:hint="Port"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/serverPortConnectButton"
+                android:text="Connect"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clientTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/clientAddressEditText"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:hint="Address"/>
+
+            <EditText
+                android:id="@+id/clientPortEditText"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:hint="Port"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/clientKey"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="Key"/>
+
+            <EditText
+                android:id="@+id/clientValue"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="Value"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:id="@+id/clientGetButton"
+                android:text="GET"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:id="@+id/clientPutButton"
+                android:text="PUT"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clientResultTextView"
+            android:text="Result: "/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
